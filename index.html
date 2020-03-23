@@ -91,13 +91,13 @@
             },
             error: function (r) {
                 alert('error');
+                console.error(r)
             },
             complete: function () {
                 $uploadBtn.innerText = "upload"
                 $uploadBtn.removeAttribute("disabled")
                 $fileList.innerHTML = ""
                 $uploadForm.reset()
-
             }
         });
     }
